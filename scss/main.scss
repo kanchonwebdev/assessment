@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sanchez", serif;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1920px;
+    width: 100%;
+    background: #880808;
+    padding: calc(18px + (20 - 15) * ((100vw - 320px) / (1920 - 320))) 50px;
+
+    .logo {
+        font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    background: gainsboro;
+    padding: 20px 50px;
+
+    .row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        max-width: 1320px;
+        margin: auto;
+        flex-wrap: wrap;
+
+        .col {
+            flex-basis: 50%;
+        }
+
+        &.row-full{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.card {
+    .title {
+        color: #fff;
+        font-size: 55px;
+    }
+
+    .text {
+        color: #fff;
+        font-size: 17px;
+    }
+}
+
+.title-96 {
+    font-size: 96px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.header {
+    height: 100vh;
+    background: #880808;
+    display: flex;
+    align-items: center;
+
+    .col {
+        .search-form {
+            width: 100%;
+            display: inline-block;
+
+            input {
+                display: inline-block;
+                width: 100%;
+                font-size: 18px;
+                padding: 8px 16px;
+                color: #fff;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.product {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .product {
+        flex-basis: 33%;
+
+        .product-footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
